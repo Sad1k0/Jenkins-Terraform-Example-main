@@ -16,7 +16,7 @@ pipeline {
         }
     stage('tfsec') {
       steps {
-       bat 'docker run --rm -v "V:\Usach\Terraform\Jenkins-Terraform-Example-main\JTF_vv\Jenkins-Terraform-Example-main:/src" aquasec/tfsec .'
+       bat 'docker run --rm -v "V:/Usach/Terraform/Jenkins-Terraform-Example-main/JTF_vv/Jenkins-Terraform-Example-main:/src" aquasec/tfsec .'
       }
     }
     stage('Approval for Terraform') {
